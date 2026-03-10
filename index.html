@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Satyam Kumar | Backend Developer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+
+<h2 class="logo">Satyam Kumar</h2>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Tech Stack</a>
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Hi, I'm <span>Satyam Kumar</span></h1>
+
+<h2><span id="typing"></span></h2>
+
+<p>
+Backend developer passionate about building scalable systems
+and modern web applications.
+</p>
+
+</div>
+
+<div class="hero-img">
+
+<img src="assets/satyam.jpg">
+
+</div>
+
+</section>
+
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+Hi, I’m Satyam Kumar, a Computer Science student at Amity University Haryana with a strong interest in backend development and building scalable systems. I enjoy creating real-world applications that combine efficient backend logic with modern web technologies. My focus is on developing clean APIs, reliable server-side architectures, and high-performance web applications.
+
+I have experience working with technologies such as Java, JavaScript, Node.js, MongoDB, HTML, and CSS, and I enjoy learning new tools that help build better software solutions. Alongside development, I continuously strengthen my problem-solving skills through Data Structures and Algorithms, which helps me write optimized and efficient code.
+
+I am particularly interested in backend engineering, cloud technologies, and system design, and I enjoy understanding how large-scale applications work behind the scenes. I like turning ideas into practical solutions by building projects that solve real problems and improve user experiences.
+
+My goal is to grow as a skilled backend developer capable of designing scalable systems and contributing to impactful technology products while continuously learning and improving as a developer.
+
+
+</p>
+
+</section>
+
+
+<section id="skills">
+
+<h2>Tech Stack</h2>
+
+<div class="skills">
+
+<div class="card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+<p>HTML</p>
+</div>
+
+<div class="card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+<p>CSS</p>
+</div>
+
+<div class="card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+<p>JavaScript</p>
+</div>
+
+<div class="card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+<p>Java</p>
+</div>
+
+<div class="card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+<p>Node.js</p>
+</div>
+
+<div class="card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
+<p>MongoDB</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="progress">
+
+<h2>Skill Progress</h2>
+
+<p>Java</p>
+<div class="bar"><span style="width:80%"></span></div>
+
+<p>JavaScript</p>
+<div class="bar"><span style="width:70%"></span></div>
+
+<p>Backend Development</p>
+<div class="bar"><span style="width:75%"></span></div>
+
+</section>
+
+<section id="services">
+
+<h2>My <span>Services</span></h2>
+
+<div class="services-container">
+
+<!-- Backend -->
+
+<div class="service-card">
+
+<div class="service-icon">⚙️</div>
+
+<h3>Backend Development</h3>
+
+<p>
+Building scalable APIs and server-side systems
+for modern applications.
+</p>
+
+<button onclick="openModal('backend')">Know more</button>
+
+</div>
+
+
+<!-- Cloud -->
+
+<div class="service-card">
+
+<div class="service-icon">☁️</div>
+
+<h3>Cloud & Deployment</h3>
+
+<p>
+Deploying and managing applications on
+modern cloud platforms.
+</p>
+
+<button onclick="openModal('cloud')">Know more</button>
+
+</div>
+
+
+<!-- Java -->
+
+<div class="service-card">
+
+<div class="service-icon">☕</div>
+
+<h3>Java Development</h3>
+
+<p>
+Building robust backend systems and
+applications using Java.
+</p>
+
+<button onclick="openModal('java')">Know more</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MODAL -->
+
+<div id="serviceModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">×</span>
+
+<h2 id="modalTitle"></h2>
+
+<ul id="modalList"></ul>
+
+</div>
+
+</div>
+
+
+<section id="terminal">
+
+<h2>Developer Console</h2>
+
+<div class="terminal">
+
+<p>> npm start</p>
+<p>> Server running...</p>
+<p>> API Connected</p>
+
+</div>
+
+</section>
+
+
+<section id="projects">
+
+<h2>GitHub Projects</h2>
+
+<div id="github-projects"></div>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form class="contact-form">
+
+<label>Your Name</label>
+<input type="text" placeholder="Enter your name">
+
+<label>Your Email</label>
+<input type="email" placeholder="Enter your email">
+
+<label>Message</label>
+<textarea placeholder="Type here..."></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+<div class="connect-card">
+
+<h2>Let's Connect</h2>
+
+<div class="connect-item">
+
+<div class="icon">
+<i class="fas fa-envelope"></i>
+</div>
+
+<div>
+<h4>Email</h4>
+<p>satyamraj72261@gmail.com</p>
+</div>
+
+</div>
+
+
+<div class="connect-item">
+
+<div class="icon">
+<i class="fas fa-phone"></i>
+</div>
+
+<div>
+<h4>Phone</h4>
+<p>+91 9508681186</p>
+</div>
+
+</div>
+
+
+<div class="connect-item">
+
+<div class="icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+
+<div>
+<h4>Location</h4>
+<p>India</p>
+</div>
+
+</div>
+
+
+<h3>Follow me on</h3>
+
+<div class="socials">
+
+<a href="https://linkedin.com" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://github.com/satyamskumar45" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="https://t.me" target="_blank">
+<i class="fab fa-telegram"></i>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Satyam Kumar</p>
+
+</footer>
+
+
+<script>
+
+var typed = new Typed("#typing", {
+strings: [
+"Backend Developer",
+"Java Developer",
+"Problem Solver",
+"Cloud Enthusiast"
+],
+typeSpeed:70,
+backSpeed:40,
+loop:true
+});
+
+particlesJS("particles-js", {
+particles:{
+number:{value:80},
+size:{value:3},
+move:{speed:2}
+}
+});
+
+fetch("https://api.github.com/users/satyamskumar45/repos")
+.then(res => res.json())
+.then(data => {
+
+let container = document.getElementById("github-projects")
+
+data.slice(0,6).forEach(repo => {
+
+let project = document.createElement("div")
+
+project.className="project-card"
+
+project.innerHTML = `
+<h3>${repo.name}</h3>
+<p>${repo.description || "GitHub Project"}</p>
+<a href="${repo.html_url}" target="_blank">View Code</a>
+`
+
+container.appendChild(project)
+
+})
+
+})
+
+</script>
+
+</body>
+</html>
