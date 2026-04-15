@@ -1,386 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Satyam Kumar | Backend Developer</title>
-
-<link rel="stylesheet" href="style.css">
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Satyam Kumar — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
 
-<div id="particles-js"></div>
+<canvas id="particles"></canvas>
 
-<header>
-
-<h2 class="logo">Satyam Kumar</h2>
-
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Tech Stack</a>
-<a href="#services">Services</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <span class="nav-logo">SK<span class="dot">.</span></span>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" class="nav-item">About</a>
+      <a href="#techstack" class="nav-item">Stack</a>
+      <a href="#services" class="nav-item">Services</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#contact" class="nav-item">Contact</a>
+      <a href="#contact" class="nav-cta">Hire me</a>
+    </div>
+  </div>
 </nav>
 
-</header>
+<!-- HERO -->
+<section id="hero">
+  <div class="atm-orb orb1"></div>
+  <div class="atm-orb orb2"></div>
+  <div class="atm-orb orb3"></div>
 
-<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="avail-pill">
+        <span class="avail-dot"></span>
+        Available for opportunities
+      </div>
 
-<div class="hero-text">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">
+        <span class="name-top">Satyam</span>
+        <span class="name-bot">Kumar<span class="cursor-blink">_</span></span>
+      </h1>
 
-<h1>Hi, I'm <span>Satyam Kumar</span></h1>
+      <div class="hero-roles">
+        <span class="role-chip">Backend Developer</span>
+        <span class="role-x">×</span>
+        <span class="role-chip">Full-Stack Engineer</span>
+      </div>
 
-<h2><span id="typing"></span></h2>
+      <p class="hero-desc">
+        Crafting scalable systems, clean APIs and modern web experiences.
+        Turning complex challenges into elegant, performant solutions.
+      </p>
 
-<p>
-Backend developer passionate about building scalable systems
-and modern web applications.
-</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects <span>→</span></a>
+        <a href="assets/resume.pdf" download class="btn-ghost">Download CV</a>
+      </div>
 
-</div>
+      <div class="tech-pills">
+        <span class="tpill hi">Java</span>
+        <span class="tpill hi">JavaScript</span>
+        <span class="tpill hi">PHP</span>
+        <span class="tpill">SQL</span>
+        <span class="tpill">HTML</span>
+        <span class="tpill">CSS</span>
+        <span class="tpill">DSA</span>
+      </div>
 
-<div class="hero-img">
+      <div class="hero-stats">
+        <div class="hstat"><span class="hnum">5+</span><span class="hlbl">Projects</span></div>
+        <div class="hdiv"></div>
+        <div class="hstat"><span class="hnum">3+</span><span class="hlbl">Years coding</span></div>
+        <div class="hdiv"></div>
+        <div class="hstat"><span class="hnum">7+</span><span class="hlbl">Technologies</span></div>
+      </div>
+    </div>
 
-<img src="satyam.jpg">
+    <div class="hero-right">
+      <div class="avatar-scene">
+        <div class="av-glow"></div>
+        <div class="av-ring-outer">
+          <div class="av-orb-dot d1"></div>
+          <div class="av-orb-dot d2"></div>
+        </div>
+        <div class="av-ring-mid"></div>
+        <div class="av-circle">
+           <img src="assets/satyam.jpg" alt="Satyam Kumar">
+        </div>
+        <div class="av-badge left">Backend Dev</div>
+        <div class="av-badge right">Open Source</div>
+      </div>
+    </div>
+  </div>
 
-</div>
-
+  <div class="scroll-cue">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
 </section>
 
-
+<!-- ABOUT -->
 <section id="about">
-
-<h2>About Me</h2>
-
-<p>
-
-Hi, I’m Satyam Kumar, a Computer Science student at Amity University Haryana with a strong interest in backend development and building scalable systems. I enjoy creating real-world applications that combine efficient backend logic with modern web technologies. My focus is on developing clean APIs, reliable server-side architectures, and high-performance web applications.
-
-I have experience working with technologies such as Java, JavaScript, Node.js, MongoDB, HTML, and CSS, and I enjoy learning new tools that help build better software solutions. Alongside development, I continuously strengthen my problem-solving skills through Data Structures and Algorithms, which helps me write optimized and efficient code.
-
-I am particularly interested in backend engineering, cloud technologies, and system design, and I enjoy understanding how large-scale applications work behind the scenes. I like turning ideas into practical solutions by building projects that solve real problems and improve user experiences.
-
-My goal is to grow as a skilled backend developer capable of designing scalable systems and contributing to impactful technology products while continuously learning and improving as a developer.
-
-
-</p>
-
+  <div class="sec-head fade-up">
+    <div class="sec-label">01 — Who I am</div>
+    <h2 class="sec-title">About <em>Me</em></h2>
+    <div class="sec-bar"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-bio fade-up">
+      <p>I'm <strong>Satyam Kumar</strong>, a developer passionate about building things that live on the internet. I focus on backend systems and full-stack web apps — writing code that's clean, fast, and built to last.</p>
+      <p>With solid expertise in <strong>Java, JavaScript, PHP and SQL</strong>, I build data-driven web apps, RESTful services and robust database architectures.</p>
+      <p>Clean code, thoughtful architecture and continuous learning are my pillars. When not coding, I'm deepening my DSA skills and exploring open-source.</p>
+      <div class="bio-tags">
+        <span>Problem Solver</span>
+        <span>Clean Code</span>
+        <span>Fast Learner</span>
+        <span>Team Player</span>
+      </div>
+    </div>
+    <div class="about-cards fade-up">
+      <div class="acard">
+        <div class="acard-ico">⚡</div>
+        <h3>Performance First</h3>
+        <p>Optimised backends built for speed and high throughput at scale.</p>
+      </div>
+      <div class="acard">
+        <div class="acard-ico">🔒</div>
+        <h3>Secure by Default</h3>
+        <p>Security-first with proper auth and data protection baked in.</p>
+      </div>
+      <div class="acard">
+        <div class="acard-ico">🧩</div>
+        <h3>Modular Design</h3>
+        <p>Clean, maintainable code structured for long-term extensibility.</p>
+      </div>
+      <div class="acard">
+        <div class="acard-ico">📐</div>
+        <h3>DSA Fundamentals</h3>
+        <p>Strong grasp of algorithms and data structures for efficient solutions.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-<section id="skills">
-
-<h2>Tech Stack</h2>
-
-<div class="skills">
-
-<div class="card">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-<p>HTML</p>
-</div>
-
-<div class="card">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
-<p>CSS</p>
-</div>
-
-<div class="card">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-<p>JavaScript</p>
-</div>
-
-<div class="card">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
-<p>Java</p>
-</div>
-
-<div class="card">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
-<p>Node.js</p>
-</div>
-
-<div class="card">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
-<p>MongoDB</p>
-</div>
-
-</div>
-
+<!-- TECH STACK -->
+<section id="techstack" class="alt-bg">
+  <div class="sec-head fade-up">
+    <div class="sec-label">02 — Tools of the trade</div>
+    <h2 class="sec-title">Tech <em>Stack</em></h2>
+    <div class="sec-bar"></div>
+  </div>
+  <div class="tech-grid fade-up">
+    <div class="tcard"><div class="tcard-top"><span class="tico">☕</span><div><div class="tname">Java</div><div class="tlvl">Advanced</div></div></div><div class="tbar"><div class="tbar-fill" data-w="90"></div></div></div>
+    <div class="tcard"><div class="tcard-top"><span class="tico">🟨</span><div><div class="tname">JavaScript</div><div class="tlvl">Advanced</div></div></div><div class="tbar"><div class="tbar-fill" data-w="85"></div></div></div>
+    <div class="tcard"><div class="tcard-top"><span class="tico">🐘</span><div><div class="tname">PHP</div><div class="tlvl">Advanced</div></div></div><div class="tbar"><div class="tbar-fill" data-w="80"></div></div></div>
+    <div class="tcard"><div class="tcard-top"><span class="tico">🗄️</span><div><div class="tname">SQL</div><div class="tlvl">Advanced</div></div></div><div class="tbar"><div class="tbar-fill" data-w="88"></div></div></div>
+    <div class="tcard"><div class="tcard-top"><span class="tico">🌐</span><div><div class="tname">HTML</div><div class="tlvl">Expert</div></div></div><div class="tbar"><div class="tbar-fill" data-w="95"></div></div></div>
+    <div class="tcard"><div class="tcard-top"><span class="tico">🎨</span><div><div class="tname">CSS</div><div class="tlvl">Expert</div></div></div><div class="tbar"><div class="tbar-fill" data-w="92"></div></div></div>
+    <div class="tcard"><div class="tcard-top"><span class="tico">🔢</span><div><div class="tname">DSA</div><div class="tlvl">Proficient</div></div></div><div class="tbar"><div class="tbar-fill" data-w="78"></div></div></div>
+    <div class="tcard"><div class="tcard-top"><span class="tico">🐙</span><div><div class="tname">Git</div><div class="tlvl">Proficient</div></div></div><div class="tbar"><div class="tbar-fill" data-w="75"></div></div></div>
+  </div>
 </section>
 
-
-<section id="progress">
-
-<h2>Skill Progress</h2>
-
-<p>Java</p>
-<div class="bar"><span style="width:80%"></span></div>
-
-<p>JavaScript</p>
-<div class="bar"><span style="width:70%"></span></div>
-
-<p>Backend Development</p>
-<div class="bar"><span style="width:75%"></span></div>
-
-</section>
-
+<!-- SERVICES -->
 <section id="services">
-
-<h2>My <span>Services</span></h2>
-
-<div class="services-container">
-
-<!-- Backend -->
-
-<div class="service-card">
-
-<div class="service-icon">⚙️</div>
-
-<h3>Backend Development</h3>
-
-<p>
-Building scalable APIs and server-side systems
-for modern applications.
-</p>
-
-<button onclick="openModal('backend')">Know more</button>
-
-</div>
-
-
-<!-- Cloud -->
-
-<div class="service-card">
-
-<div class="service-icon">☁️</div>
-
-<h3>Cloud & Deployment</h3>
-
-<p>
-Deploying and managing applications on
-modern cloud platforms.
-</p>
-
-<button onclick="openModal('cloud')">Know more</button>
-
-</div>
-
-
-<!-- Java -->
-
-<div class="service-card">
-
-<div class="service-icon">☕</div>
-
-<h3>Java Development</h3>
-
-<p>
-Building robust backend systems and
-applications using Java.
-</p>
-
-<button onclick="openModal('java')">Know more</button>
-
-</div>
-
-</div>
-
+  <div class="sec-head fade-up">
+    <div class="sec-label">03 — What I offer</div>
+    <h2 class="sec-title">My <em>Services</em></h2>
+    <div class="sec-bar"></div>
+  </div>
+  <div class="serv-grid">
+    <div class="scard fade-up">
+      <div class="snum">01</div>
+      <div class="sico">🔧</div>
+      <h3>Backend Development</h3>
+      <p>Building robust, scalable server-side applications using Java and PHP with clean architecture and reliable database design.</p>
+      <div class="stags"><span>Java</span><span>PHP</span><span>SQL</span><span>REST APIs</span></div>
+    </div>
+    <div class="scard fade-up">
+      <div class="snum">02</div>
+      <div class="sico">🌐</div>
+      <h3>Web Development</h3>
+      <p>End-to-end web applications from database design to interactive frontends with HTML, CSS and JavaScript.</p>
+      <div class="stags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span></div>
+    </div>
+    <div class="scard fade-up">
+      <div class="snum">03</div>
+      <div class="sico">🗄️</div>
+      <h3>Database Design</h3>
+      <p>Designing efficient schemas, writing optimised SQL queries and managing relational databases for maximum performance.</p>
+      <div class="stags"><span>SQL</span><span>MySQL</span><span>Schema Design</span></div>
+    </div>
+    <div class="scard fade-up">
+      <div class="snum">04</div>
+      <div class="sico">🧠</div>
+      <h3>Algorithm & DSA</h3>
+      <p>Solving complex computational problems with efficient data structures and algorithms — optimising for time and space.</p>
+      <div class="stags"><span>DSA</span><span>Java</span><span>Problem Solving</span></div>
+    </div>
+    <div class="scard fade-up">
+      <div class="snum">05</div>
+      <div class="sico">🤖</div>
+      <h3>Smart Text Processing</h3>
+      <p>Building NLP-powered tools: translation, sentiment analysis, text summarisation and language feature extraction.</p>
+      <div class="stags"><span>JavaScript</span><span>APIs</span><span>NLP</span></div>
+    </div>
+    <div class="scard fade-up">
+      <div class="snum">06</div>
+      <div class="sico">🔍</div>
+      <h3>Code Review & Consulting</h3>
+      <p>Reviewing codebases, spotting bottlenecks and advising on architectural improvements for long-term maintainability.</p>
+      <div class="stags"><span>Audit</span><span>Refactoring</span><span>Best Practices</span></div>
+    </div>
+  </div>
 </section>
 
+<!-- PROJECTS -->
+<section id="projects" class="alt-bg">
+  <div class="sec-head fade-up">
+    <div class="sec-label">04 — What I've built</div>
+    <h2 class="sec-title">Featured <em>Projects</em></h2>
+    <div class="sec-bar"></div>
+  </div>
+  <div class="proj-grid">
 
-<!-- MODAL -->
+    <div class="pcard featured fade-up">
+      <div class="pcard-head">
+        <div class="pico">🩸</div>
+        <div class="pfeat-badge">Featured</div>
+        <div class="plinks">
+          <a href="#" class="plink">GH</a>
+          <a href="#" class="plink">↗</a>
+        </div>
+      </div>
+      <h3 class="ptitle">Blood Bank Management System</h3>
+      <p class="pdesc">A full-stack web application to manage blood bank operations — donor registration, blood inventory tracking, request management and admin dashboard. Built with PHP, SQL and a clean UI.</p>
+      <div class="ptags"><span>PHP</span><span>SQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+    </div>
 
-<div id="serviceModal" class="modal">
+    <div class="pcard fade-up">
+      <div class="pcard-head">
+        <div class="pico">🌦️</div>
+        <div class="plinks">
+          <a href="#" class="plink">GH</a>
+          <a href="#" class="plink">↗</a>
+        </div>
+      </div>
+      <h3 class="ptitle">Weather App</h3>
+      <p class="pdesc">A real-time weather application that fetches live data from a weather API, displays current conditions, forecasts and location-based results with a clean, responsive UI.</p>
+      <div class="ptags"><span>JavaScript</span><span>REST API</span><span>HTML</span><span>CSS</span></div>
+    </div>
 
-<div class="modal-content">
+    <div class="pcard fade-up">
+      <div class="pcard-head">
+        <div class="pico">🤖</div>
+        <div class="plinks">
+          <a href="#" class="plink">GH</a>
+          <a href="#" class="plink">↗</a>
+        </div>
+      </div>
+      <h3 class="ptitle">SmartText Bot</h3>
+      <p class="pdesc">An intelligent text processing tool offering multilingual translation, sentiment analysis, keyword extraction and text summarisation — all in one interface powered by NLP APIs.</p>
+      <div class="ptags"><span>JavaScript</span><span>NLP APIs</span><span>HTML</span><span>CSS</span></div>
+    </div>
 
-<span class="close" onclick="closeModal()">×</span>
+    <div class="pcard fade-up">
+      <div class="pcard-head">
+        <div class="pico">📦</div>
+        <div class="plinks">
+          <a href="#" class="plink">GH</a>
+          <a href="#" class="plink">↗</a>
+        </div>
+      </div>
+      <h3 class="ptitle">Storage Company Website</h3>
+      <p class="pdesc">A professional business website for a storage company — showcasing services, pricing plans, location info and a contact form. Fully responsive with a modern clean layout.</p>
+      <div class="ptags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+    </div>
 
-<h2 id="modalTitle"></h2>
+    <div class="pcard fade-up">
+      <div class="pcard-head">
+        <div class="pico">🧑‍💻</div>
+        <div class="plinks">
+          <a href="https://satyamskumar45.github.io/satyam-portfolio/" class="plink" target="_blank">↗</a>
+        </div>
+      </div>
+      <h3 class="ptitle">Personal Portfolio</h3>
+      <p class="pdesc">This very portfolio — designed and built from scratch with animated particle backgrounds, smooth scroll, responsive layout and a clean developer aesthetic to showcase my work.</p>
+      <div class="ptags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+    </div>
 
-<ul id="modalList"></ul>
-
-</div>
-
-</div>
-
-
-<section id="terminal">
-
-<h2>Developer Console</h2>
-
-<div class="terminal">
-
-<p>> npm start</p>
-<p>> Server running...</p>
-<p>> API Connected</p>
-
-</div>
-
+  </div>
 </section>
 
-
-<section id="projects">
-
-<h2>GitHub Projects</h2>
-
-<div id="github-projects"></div>
-
-</section>
-
-
+<!-- CONTACT -->
 <section id="contact">
-
-<h2>Contact Me</h2>
-
-<form class="contact-form">
-
-<label>Your Name</label>
-<input type="text" placeholder="Enter your name">
-
-<label>Your Email</label>
-<input type="email" placeholder="Enter your email">
-
-<label>Message</label>
-<textarea placeholder="Type here..."></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
-<div class="connect-card">
-
-<h2>Let's Connect</h2>
-
-<div class="connect-item">
-
-<div class="icon">
-<i class="fas fa-envelope"></i>
-</div>
-
-<div>
-<h4>Email</h4>
-<p>satyamraj72261@gmail.com</p>
-</div>
-
-</div>
-
-
-<div class="connect-item">
-
-<div class="icon">
-<i class="fas fa-phone"></i>
-</div>
-
-<div>
-<h4>Phone</h4>
-<p>+91 9508681186</p>
-</div>
-
-</div>
-
-
-<div class="connect-item">
-
-<div class="icon">
-<i class="fas fa-map-marker-alt"></i>
-</div>
-
-<div>
-<h4>Location</h4>
-<p>India</p>
-</div>
-
-</div>
-
-
-<h3>Follow me on</h3>
-
-<div class="socials">
-
-<a href="https://linkedin.com" target="_blank">
-<i class="fab fa-linkedin"></i>
+  <div class="sec-head fade-up">
+    <div class="sec-label">05 — Get in touch</div>
+    <h2 class="sec-title">Let's <em>Work Together</em></h2>
+    <div class="sec-bar"></div>
+  </div>
+  <div class="contact-box fade-up">
+    <p class="contact-desc">I'm open to freelance projects, full-time roles or just a good tech conversation. Drop me a message and I'll get back within 24 hours.</p>
+    <div class="contact-links">
+      <a href="https://github.com/satyamskumar45" target="_blank" class="clink"><span class="clink-ico">🐙</span><span>GitHub</span></a>
+      <a href="www.linkedin.com/in/satyam-kumar-9a29041a7" target="_blank" class="clink">
+  <span class="clink-ico">💼</span>
+  <span>LinkedIn</span>
+   </a>
+    </div>
+    <a href="mailto:satyamraj72261@gmail.com" class="clink">
+  <span class="clink-ico">📧</span>
+  <span>satyamraj72261@gmail.com</span>
 </a>
-
-<a href="https://github.com/satyamskumar45" target="_blank">
-<i class="fab fa-github"></i>
-</a>
-
-<a href="https://t.me" target="_blank">
-<i class="fab fa-telegram"></i>
-</a>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
-
+<!-- FOOTER -->
 <footer>
-
-<p>© 2026 Satyam Kumar</p>
-
+  <div class="foot-inner">
+    <span class="foot-logo">SK<span class="dot">.</span></span>
+    <span class="foot-copy">© 2025 Satyam Kumar. All rights reserved.</span>
+    <a href="#hero" class="foot-top">Back to top ↑</a>
+  </div>
 </footer>
 
-
-<script>
-
-var typed = new Typed("#typing", {
-strings: [
-"Backend Developer",
-"Java Developer",
-"Problem Solver",
-"Cloud Enthusiast"
-],
-typeSpeed:70,
-backSpeed:40,
-loop:true
-});
-
-particlesJS("particles-js", {
-particles:{
-number:{value:80},
-size:{value:3},
-move:{speed:2}
-}
-});
-
-fetch("https://api.github.com/users/satyamskumar45/repos")
-.then(res => res.json())
-.then(data => {
-
-let container = document.getElementById("github-projects")
-
-data.slice(0,6).forEach(repo => {
-
-let project = document.createElement("div")
-
-project.className="project-card"
-
-project.innerHTML = `
-<h3>${repo.name}</h3>
-<p>${repo.description || "GitHub Project"}</p>
-<a href="${repo.html_url}" target="_blank">View Code</a>
-`
-
-container.appendChild(project)
-
-})
-
-})
-
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
